@@ -15,7 +15,7 @@ RSpec.describe Lovisa do
   end
 
   it "she is more than brilliant" do
-    loivsa = Lovisa.new('Lovisa the friend', ['brilliant', 'kind'])
+    lovisa = Lovisa.new('Lovisa the friend', ['brilliant', 'kind'])
     expect(loivsa.characteristics).to eq(['brilliant', 'kind'])
     expect(loivsa.brilliant?).to eq(true)
     expect(loivsa.brilliant?).to be true
@@ -24,7 +24,7 @@ RSpec.describe Lovisa do
   end
 
   it 'she says sparkly stuff' do
-    loivsa = Lovisa.new('Lovisa the Loved')
+    lovisa = Lovisa.new('Lovisa the Loved')
     expect(loivsa.say('Wonderful!')).to eq('**;* Wonderful! **;*')
     expect(loivsa.say('You are doing great!')).to eq('**;* You are doing great! **;*')
   end
